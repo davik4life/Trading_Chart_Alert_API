@@ -11,7 +11,7 @@ class Alert(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='alerts')
     symbol = models.CharField(max_length=20)
-    target_price = models.DecimalField(max_digits=12, decimal_places=4)
+    target_price = models.DecimalField(max_digits=20, decimal_places=8)
     condition = models.CharField(max_length=10, choices=CONDITION_CHOICES)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
