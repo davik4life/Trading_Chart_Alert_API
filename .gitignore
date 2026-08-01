@@ -1,3 +1,26 @@
+# Environment variables / Secrets
 .env
 .env.*
 !.env.example
+
+# Python / Virtual Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Tooling Caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Django Database & Media
+db.sqlite3
+media/
+
+# macOS System Files
+.DS_Store
+
+# IDEs related files
+.vscode/
+.mypy_cache/
